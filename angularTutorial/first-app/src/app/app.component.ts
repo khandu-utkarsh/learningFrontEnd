@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
-import { HomeComponent } from './home/home.component';
+//import { HomeComponent } from './home/home.component';
 import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
-  selector: 'app-root', //!This is CSS selector
+  selector: 'app-root', //!This is CSS selector or maybe the something used to name the element. Check what are html element. It looks
+  //to me that everywhere selector is defined, we are using it as the component name.
   standalone: true, //!Independent component, not a module --> What does this exactly mean? 
-  imports: [HomeComponent, RouterLink, RouterOutlet],
+  //imports: [HomeComponent, RouterLink, RouterOutlet], --> It looks to me that home component is not needed.
+  imports: [RouterLink, RouterOutlet],
   template: `
     <main>
       <a [routerLink]="['/']">

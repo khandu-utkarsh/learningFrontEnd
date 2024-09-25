@@ -1,49 +1,55 @@
 {
-  "hash": "d7007c69",
-  "configHash": "64142b53",
+  "hash": "269881f9",
+  "configHash": "c2039816",
   "lockfileHash": "2e59c1ea",
-  "browserHash": "357f81e6",
+  "browserHash": "fa7bab95",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "1f084541",
+      "fileHash": "f80f7c84",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "59252d2e",
+      "fileHash": "480e16d9",
       "needsInterop": false
     },
     "tslib": {
       "src": "../../../../../node_modules/tslib/tslib.es6.mjs",
       "file": "tslib.js",
-      "fileHash": "19c9023f",
+      "fileHash": "0d0908b1",
       "needsInterop": false
     },
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "8d5ca3ea",
+      "fileHash": "835d7af2",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "f13711f5",
+      "fileHash": "d73dac0f",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "de0f3a16",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-R46BF2J6": {
-      "file": "chunk-R46BF2J6.js"
+    "chunk-FD5DQAIY": {
+      "file": "chunk-FD5DQAIY.js"
     },
-    "chunk-M4I5H7Y2": {
-      "file": "chunk-M4I5H7Y2.js"
+    "chunk-3CA3GGNH": {
+      "file": "chunk-3CA3GGNH.js"
     },
-    "chunk-3HENC4WE": {
-      "file": "chunk-3HENC4WE.js"
+    "chunk-DCUE5PY2": {
+      "file": "chunk-DCUE5PY2.js"
     },
     "chunk-YNZI7GL3": {
       "file": "chunk-YNZI7GL3.js"

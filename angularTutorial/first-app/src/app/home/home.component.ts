@@ -29,9 +29,10 @@ import {HousingService} from '../housing.service';
 export class HomeComponent {
 
   housingService: HousingService = inject(HousingService);
+  housingLocationList: HousingLocation[] = [ ]; //!Do I need to define it, or can it be like javascript and declared on the go?
   constructor() {
     this.housingLocationList = this.housingService.getAllHousingLocations();
   }
-  housingLocationList: HousingLocation[] = [ ];
+
 
 }
