@@ -5,6 +5,12 @@ import {HousingService} from '../housing.service';
 import {HousingLocation} from '../housing-location';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 
+
+//!Interpolation
+//!Dynamic Properties
+//!Dynammic Attributes
+//!Events name inside paranthessis
+
 @Component({
   selector: 'app-details',
   standalone: true,
@@ -44,8 +50,6 @@ import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
     </section>
   </article>
 `,
-
-
 styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent {
