@@ -6,11 +6,11 @@
   <div class="flex-container">
     <div class="flex-item">
       <label for="latitude">Latitude</label>
-      <input type="text" [(ngModel)]="latitude" name="latitude">
+      <input type="number" [(ngModel)]="latitude" step="any" min="-90" max="90" name="latitude" id="latitude">      
     </div>
     <div class="flex-item">
       <label for="longitude">Longitude</label>
-      <input type="text" [(ngModel)]="longitude" name="longitude">
+      <input type="number" [(ngModel)]="longitude" step="any" name="longitude" id="longitude">
     </div>
     <button (click)="submitButtonClicked()">Submit</button>
   </div>

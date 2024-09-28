@@ -1,5 +1,16 @@
 # MyWeatherApp
 
+
+Goal of this application:
+1. Create components.
+2. Creat service and inject it.
+3. Accept user input. Add some limitations to it.
+4. Do some async communication.
+5. Route to a different page, depending on the input.
+
+# TODO:
+1. Try to use input forms and reactive forms.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
 
 ## Development server

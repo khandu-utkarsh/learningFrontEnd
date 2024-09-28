@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { OpenmeteoWeatherServiceService } from './openmeteo-weather-service.service';
-import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 //!Let's put everything in the root and create a button.
 
@@ -9,7 +9,7 @@ import { NgModule } from '@angular/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -32,15 +32,16 @@ export class AppComponent {
       "longitude": this.longitude,
       "hourly": "temperature_2m"
     };
-  
-    console.log(this.latitude);
-    console.log(this.longitude);
 
     if (this.latitude && this.longitude) {
 
       //!This got called.
       this.ws.getWeatherInfoForParams(params); //!It is printing on the console inside it.
       console.log('Coordinates:', {        latitude: this.latitude,        longitude: this.longitude});
+
+      //!Also, if ut is successful, it is better to create a new page with the ids and display it there:
+      
+
     }
     else {
       console.error('Please provide both latitude and longitude.');
