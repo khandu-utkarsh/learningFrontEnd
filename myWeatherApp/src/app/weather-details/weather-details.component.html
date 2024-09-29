@@ -1,1 +1,19 @@
-<p>weather-details works!</p>
+<h2>Weather Data</h2>
+<p> Latitude: {{returnedLatitude}}</p>
+<p> Longitude: {{returnedLongitude}}</p>
+<table>
+  <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Max Temperature (°C)</th>
+      <th>Min Temperature (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let time of weatherData.daily.time; let i = index">
+      <td>{{ time | date: 'medium' }}</td>
+      <td>{{ weatherData.daily.temperature2m_max[i] }} °C</td>
+      <td>{{ weatherData.daily.temperature2m_min[i] }} °C</td>
+    </tr>
+  </tbody>
+</table>

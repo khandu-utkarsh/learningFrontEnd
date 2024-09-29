@@ -6,7 +6,7 @@
   </div>
   <div class="flex-item">
     <label for="longitude">Longitude</label>
-    <input type="number" [(ngModel)]="longitude" step="any" name="longitude" id="longitude">
+    <input type="number" [(ngModel)]="longitude" step="any" min="-180" max="180" name="longitude" id="longitude">
   </div>
   <button (click)="submitButtonClicked()">Submit</button>
 
