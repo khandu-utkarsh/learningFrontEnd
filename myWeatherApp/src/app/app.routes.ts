@@ -9,7 +9,7 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: 'wc',
+        path: 'weatherDetails/:coords', 
         component: WeatherDetailsComponent,
     },
     {
