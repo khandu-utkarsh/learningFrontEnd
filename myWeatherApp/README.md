@@ -9,3 +9,4 @@ Once user click on submit button, navigate to the details page and show the rele
 3. [TODO] Need to provide the page where we can show the the input params are out of range. 
 4. [TODO] Fetch city, country, ocean, etc etc from the coordinates and display it.
 5. [TODO] Asthetics of the website.
+6. [TODO] Understand and take care of the life cycle of the commands.
