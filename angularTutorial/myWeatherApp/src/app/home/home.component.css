@@ -1,0 +1,19 @@
+/* Copied this code from ChatGPT, still now proficient with directly thinking out of the box */
+.flex-container {
+    display: flex;           /* Enables Flexbox */
+    justify-content: space-between;  /* Distributes the space between items */
+    align-items: center;     /* Aligns items vertically in the center */
+    gap: 1rem;               /* Adds space between flex items */
+  }
+  
+  .flex-item {
+    display: flex;
+    flex-direction: column;  /* Keeps label and input stacked vertically */
+    gap: 0.5rem;             /* Adds space between label and input */
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  

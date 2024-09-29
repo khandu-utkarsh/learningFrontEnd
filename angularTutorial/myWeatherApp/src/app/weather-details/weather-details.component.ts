@@ -12,4 +12,9 @@ import { Component } from '@angular/core';
 })
 export class WeatherDetailsComponent {
 
+//!This component should basically take input as latitude and longitude and display the the things:
+
+
+
+
 }

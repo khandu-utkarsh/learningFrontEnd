@@ -1,13 +1,21 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { WeatherDetailsComponent } from './weather-details/weather-details.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-        {
-          path: 'wc',
-          component: WeatherDetailsComponent,
-        }
+    {
+        path: "",
+        component: HomeComponent
+    },
+    {
+        path: 'wc',
+        component: WeatherDetailsComponent,
+    },
+    {
+        path: "**",
+        component: PageNotFoundComponent
+    }
 ];
 
-
-//#Rendering not happening but router is changing.
+//!TODO: Make the details page such that in the url it is -latitude_longitude. So every lati longi pair is different component.
