@@ -30,6 +30,15 @@ const element = {
 const container = document.getElementById("root")
 //ReactDOM.render(element, container) //!This is place where React updates the DOM element. The render function
 */
+
+
+
+/*
+
+
+//  -------------------------------------- Below is the working code  --------------------------------------
+//  Commenting it out as it was simply used a as example
+
 const element = {
     type: "h1",
     props: {
@@ -53,5 +62,4 @@ container.appendChild(node)
 
 //!So above code has crated a DOM node of type h1 with the title "foo" and content described above
 
-
-
+*/
