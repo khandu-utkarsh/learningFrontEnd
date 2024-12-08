@@ -2,11 +2,14 @@
     "compilerOptions": {
         "strict": true,
         "esModuleInterop": true,
-        "jsx": "react",
-      "lib": ["es2015", "dom"]      
+        "jsx": "react-jsx",
+        "lib": ["es2015", "dom"],  
+        "skipLibCheck": true,           // Skips type checking for declaration files (optional)
+        "moduleResolution": "node",   // Use node module resolution
+
     },
     "include": [
-        "global.d.ts"  // Include the declaration file here
+        "src/**/*"
+        //"src/global.d.ts"  // Include the declaration file here
     ]
 }
-  
