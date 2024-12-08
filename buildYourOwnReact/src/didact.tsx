@@ -5,6 +5,9 @@
 
     //! https://zackargyle.github.io/react-internals-slides/#/?_k=vl2nvj
 
+//! Below is the resource which was not able to understand in a single go, maybe need better understanding of React. Linking the resource, to read later on:
+  // https://makersden.io/blog/look-inside-fiber
+
 /* 
 Fiber is the type which react uses to keep track of DOM changes
 */

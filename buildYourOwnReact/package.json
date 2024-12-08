@@ -2,7 +2,7 @@
   "name": "buildyourownreact",
   "version": "1.0.0",
   "description": "This repository is dedicated to my journey of understanding the fundamental workings of the React framework.",
-  "main": "index.js",
+  "main": "didact.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

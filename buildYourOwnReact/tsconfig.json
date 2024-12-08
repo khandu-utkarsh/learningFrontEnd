@@ -10,6 +10,5 @@
     },
     "include": [
         "src/**/*"
-        //"src/global.d.ts"  // Include the declaration file here
     ]
 }
