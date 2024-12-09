@@ -1,0 +1,85 @@
+/* Below is the css properties defined for the root, which could be HTML element, so that all html elements could access it and refer to it.
+    Inside this selector they have declared some of the CSS custom variable
+
+*/
+:root {
+    --bg:white; 
+    --textColor:black;
+    --softBg:#f0f0f0;
+    --softTextColor:#626262;
+}
+
+/* Setting for all the elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Using element selector of type selector, so this would effect all the body elements. */
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Using element selector of type selector so this would effect all the anchor elements. */
+a{
+  color: inherit;
+  text-decoration: none;  
+}
+
+.container{
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--textColor);
+}
+
+.wrapper{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rebeccapurple;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+@media screen and (max-width: 1536px) {
+    
+    .wrapper{
+        max-width: 1366px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+    .wrapper{
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .wrapper{
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .wrapper{
+        max-width: 640px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    .wrapper{
+        max-width: 475px;
+    }
+}
