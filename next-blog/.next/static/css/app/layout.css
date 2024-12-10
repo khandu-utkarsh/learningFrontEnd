@@ -1,3 +1,23 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/themeToggle/themeToggle.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.themeToggle_container__qFM4I{
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.themeToggle_ball__I_org{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.js","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -100,6 +120,15 @@ a{
   text-decoration: none;  
 }
 
+
+.dark{
+    --bg:#0f172a;
+    --textColor:#ddd;
+    --softBg:#1f273a;
+    --softTextColor: #a6a6a6;
+}
+
+
 .container{
     min-height: 100vh;
     background-color: var(--bg);
@@ -179,31 +208,9 @@ a{
 
 .navbar_links__zwFDW{
     display: flex;
+    align-items: center;
     gap: 20px;
     flex: 1 1;
-}
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/themeToggle/themeToggle.module.css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
-.themeToggle_container__qFM4I{
-    width: 40px;
-    height: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    position: relative;
-}
-
-.themeToggle_ball__I_org{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    left: 1px;
 }
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/authLinks/authLinks.module.css ***!
