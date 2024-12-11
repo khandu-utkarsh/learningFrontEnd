@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
 }
 
 .social{
@@ -58,6 +59,9 @@
 
 
 @media screen and (max-width: 640px) {
+    .links{
+        justify-content: flex-end;
+    }
     .link{
         display: none;
     }

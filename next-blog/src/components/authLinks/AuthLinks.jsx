@@ -4,6 +4,20 @@ import Link from "next/link";
 import styles from "./authLinks.module.css"
 import { useState } from "react";
 
+
+
+function LoginLogoutComp({compStatus, linkClassName}) {
+    const loginLink = <Link href="/login" className={linkClassName}>Login</Link>
+    const logoutLink = 
+        <>
+            <Link href="/write" className={linkClassName}>Write</Link>
+            <span className={linkClassName}>Logout</span>
+        </>
+    return (compStatus === "notAuthenticated" ? loginLink :logoutLink )
+}
+
+
+
 const AuthLinks = () => {
 
     const [open, setOpen] = useState(false)
@@ -25,15 +39,15 @@ const AuthLinks = () => {
         </div>
 
     const burgerMenuOpen = 
-        <>
+        <div className={styles.responsiveMenu}>
             <Link href="/" >Homepage</Link>
             <Link href="/" >Contact</Link>
             <Link href="/" >About</Link>
-            {status === "notAuthenticated" ? loginLink :logoutLink }
-        </>
+            <LoginLogoutComp compStatus={status}/>
+        </div>
     return (
         <>
-            {status === "notAuthenticated" ? loginLink :logoutLink }
+            <LoginLogoutComp compStatus={status} linkClassName={styles.link}/>
             {burgerMenu}
             {open && burgerMenuOpen}
         </>
