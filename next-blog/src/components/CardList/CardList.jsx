@@ -13,7 +13,6 @@ const CardList = () => {
                 <Card />
                 <Card />
             </div>
-            CardList
             <Pagination />
         </div>
     )
