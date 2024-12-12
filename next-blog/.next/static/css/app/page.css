@@ -5,18 +5,178 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/featured/featured.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
+.featured_container__9bUI6{
+    margin-top: 30px;
+}
+
+.featured_title__rFWcP{
+    font-size: 96px;
+    font-weight: 300;
+}
+
+.featured_post__sWkzO{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.featured_imgContainer__phBYF{
+    flex: 1 1;
+    height: 500px;
+    position: relative;
+}
+
+.featured_image__s8EnU{
+    object-fit: cover;
+}
+
+
+.featured_textContainer__KZ18s{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured_postTitle__juEkV{
+    font-size: 40px;
+}
+
+.featured_postDesc__wsFpz{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--softTextColor);
+}
+
+.featured_button__ufmSY{
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+    .featured_title__rFWcP{
+        font-size: 72px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .featured_title__rFWcP{
+        font-size: 64px;
+    }
+
+    .featured_imgContainer__phBYF{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .featured_title__rFWcP{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    .featured_title__rFWcP{
+        font-size: 36px;
+    }
+}
+
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/categories/categories.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.categories_title__rcOCs{
+    margin: 50px 0px;
+}
+
+.categories_categories__HVOkM{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.categories_category__FQDqf{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: 15%;
+    height: 80px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.categories_category__FQDqf.categories_style__hvVRQ{
+    background-color: #57c4ff31;
+}
+
+.categories_category__FQDqf.categories_fashion__cunH0{
+    background-color: #da85c731;
+}
+
+.categories_category__FQDqf.categories_food__q3ur5{
+    background-color: #7fb88133;
+}
+
+.categories_category__FQDqf.categories_travel__bto_h{
+    background-color: #ff795736;
+}
+
+.categories_category__FQDqf.categories_culture__SeujK{
+    background-color: #ffb04f45;
+}
+
+.categories_category__FQDqf.categories_coding__pM6zc{
+    background-color: #5e4fff31;
+}
+
+
+
+.categories_image__bgYVg{
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+    .categories_category__FQDqf{
+        width: 20%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .categories_category__FQDqf{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .categories_category__FQDqf{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .categories_category__FQDqf{
+        width: 100%;
+    }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/CardList/cardlist.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/pagination/pagination.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
-
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/CardList/cardlist.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/menu/menu.module.css ***!
