@@ -1,0 +1,32 @@
+.container{
+    margin-top: 50px;
+}
+
+.title{
+    color: var(--softTextColor);
+    margin-botton: 30px;
+}
+
+.write{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    margin-bottom: 20px;
+}
+
+.input{
+    padding: 20px;
+    width: 100%;
+}
+
+.button{
+    background-color: teal;
+    color: white;
+    padding: 16px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
