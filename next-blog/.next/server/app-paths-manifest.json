@@ -3,6 +3,6 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/[slug]/page": "app/[slug]/page.js",
   "/blog/page": "app/blog/page.js",
-  "/login/page": "app/login/page.js",
-  "/write/page": "app/write/page.js"
+  "/write/page": "app/write/page.js",
+  "/login/page": "app/login/page.js"
 }
