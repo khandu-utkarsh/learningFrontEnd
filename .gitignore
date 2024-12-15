@@ -1,1 +1,5 @@
-ticTacToeLearningReact/node_modules/
+.DS_Store
+**/node_modules/
+
+next-blog/.env
+next-blog/.next
