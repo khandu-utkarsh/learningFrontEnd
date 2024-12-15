@@ -1,5 +1,7 @@
 .DS_Store
 **/node_modules/
+**/.angular/
+**/.next/
 
 next-blog/.env
 next-blog/.next
