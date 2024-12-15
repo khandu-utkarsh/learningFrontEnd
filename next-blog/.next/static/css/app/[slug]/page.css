@@ -1,10 +1,6 @@
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/app/[slug]/singlePage.module.css ***!
   \******************************************************************************************************************************************************************************************************************************************************************************/
-.singlePage_container__Rvhta{
-
-}
-
 .singlePage_infoContainer__jaL7Y{
     display: flex;
     align-items: center;
@@ -69,8 +65,13 @@
     margin-bottom: 20px;
 }
 
-.singlePage_comments__C_Xdj{
+@media screen and (max-width:1536px) {
 
+    .singlePage_title__KEm_V{
+        font-size: 54px;
+    }
+
+    
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[7].use[3]!./src/components/menu/menu.module.css ***!
@@ -173,7 +174,7 @@
 
 .comments_title__Q4Ma_{
     color: var(--softTextColor);
-    margin-botton: 30px;
+    margin-bottom: 30px;
 }
 
 .comments_write__WpTkj{
@@ -181,7 +182,6 @@
     align-items: center;
     justify-content: space-between;
     gap:20px;
-    margin-bottom: 20px;
 }
 
 .comments_input__Om1ak{
@@ -200,3 +200,10 @@
 }
 
 
+.comments_comments__0uKqx{
+    margin-top: 50px;
+}
+
+.comments_comment__VdHvU{
+    margin-bottom: 50px;
+}

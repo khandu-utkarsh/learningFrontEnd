@@ -30,6 +30,40 @@ const Comments = () => {
                         </div>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
+
+
+                    <div className={styles.comment}>
+                        <div className={styles.user}>
+                            <Image  src="/p1.jpeg" height={50} width={50} className={styles.image}/>
+                            <div className={styles.userInfo}>
+                                <span className={styles.username}>John Doe</span>
+                                <span className={styles.date}>01.01.2023</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div className={styles.comment}>
+                        <div className={styles.user}>
+                            <Image  src="/p1.jpeg" height={50} width={50} className={styles.image}/>
+                            <div className={styles.userInfo}>
+                                <span className={styles.username}>John Doe</span>
+                                <span className={styles.date}>01.01.2023</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div className={styles.comment}>
+                        <div className={styles.user}>
+                            <Image  src="/p1.jpeg" height={50} width={50} className={styles.image}/>
+                            <div className={styles.userInfo}>
+                                <span className={styles.username}>John Doe</span>
+                                <span className={styles.date}>01.01.2023</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
         </div>
     )
