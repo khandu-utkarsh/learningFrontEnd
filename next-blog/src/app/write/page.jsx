@@ -7,6 +7,8 @@ import { useState } from "react"
 import ReactQuill from "react-quill"
 import Image from "next/image"
 import "react-quill/dist/quill.bubble.css"
+import { useSession } from "next-auth/react"
+import { useRouter } from "next/navigation"
 
 
 
@@ -14,6 +16,19 @@ const WritePage = () => {
 
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState("");
+
+    const {status} = useSession()
+    const router = useRouter()
+    // Redirect to homepage if authenticated
+    useEffect(() => {
+        if (status === "authenticated") {
+            router.push("/");
+        }
+    }, [status, router]); // Depend on `status` and `router`
+
+    if (status === "loading") {
+        return <div className={styles.loading}>Loading...</div>
+    } 
 
     return (
         <div className={styles.container}>
