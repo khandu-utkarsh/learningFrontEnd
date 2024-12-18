@@ -3,7 +3,7 @@
 import Link from "next/link";
 import styles from "./authLinks.module.css"
 import { useState } from "react";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 
 
@@ -12,9 +12,9 @@ function LoginLogoutComp({compStatus, linkClassName}) {
     const logoutLink = 
         <>
             <Link href="/write" className={linkClassName}>Write</Link>
-            <span className={linkClassName}>Logout</span>
+            <span className={linkClassName} onClick={() => signOut()}>Logout</span>
         </>
-    return (compStatus === "notAuthenticated" ? loginLink :logoutLink )
+    return (compStatus === "unauthenticated" ? loginLink :logoutLink )
 }
 
 
@@ -23,16 +23,7 @@ const AuthLinks = () => {
 
     const [open, setOpen] = useState(false)
 
-
-    //const status = "notAuthenticated"   //!Temp
-    const status = "authenticated"   //!Temp
-
-    const loginLink = <Link href="/login" className={styles.link}>Login</Link>
-    const logoutLink = 
-        <>
-            <Link href="/write" className={styles.link}>Write</Link>
-            <span className={styles.link} onClick={signOut}>Logout</span>
-        </>
+    const {status} = useSession();
     const burgerMenu =
         <div className={styles.burger} onClick={() => setOpen(!open)}>
             <div className={styles.line}></div>
