@@ -4,9 +4,9 @@ import styles from "./cardlist.module.css"
 import Pagination from "../pagination/Pagination";
 import Card from "../card/Card"
 
-const getData   = async (page) => {
+const getData   = async (page, cat) => {
     //console.log("page no.: ", page)
-    const res = await fetch(`http://localhost:3000/api/posts?page=${page}`, {
+    const res = await fetch(`http://localhost:3000/api/posts?page=${page}&cat=${cat || ""}`, {
         cache: "no-store",
     });
 
@@ -20,11 +20,11 @@ const getData   = async (page) => {
 
 
 
-const CardList = async ({page}) => {
+const CardList = async ({page, cat}) => {
 
     const POST_PER_PAGE = 2;
     
-    const {posts, count} = await getData(page);
+    const {posts, count} = await getData(page, cat);
     const hasPrev = POST_PER_PAGE * (page -1) > 0
     const hasNext = POST_PER_PAGE * (page - 1) + POST_PER_PAGE < count
 
