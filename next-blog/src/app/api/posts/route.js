@@ -1,6 +1,7 @@
 import prisma from "@/utils/connect";
 import { skip } from "@prisma/client/runtime/library";
 import { NextResponse } from "next/server";
+import { getAuthSession } from "@/utils/auth";
 
 export const GET = async (req)=> {
 
@@ -27,6 +28,27 @@ export const GET = async (req)=> {
 
         return new NextResponse(JSON.stringify({posts, count}, {status:200}));
 
+    } catch(err) {
+        console.log(err)
+        return new NextResponse(JSON.stringify({message:"Something went wrong!"}, {status:500}));
+    }
+};
+
+//!Create a post
+export const POST = async (req)=> {
+    const session = await getAuthSession();
+
+    console.log("Req we got is: ", req);
+
+    if(!session) {
+        return new NextResponse(JSON.stringify({message:"Not authenticated."}, {status:401}));
+    }
+    try {
+        const body = await req.json()
+        const post = await prisma.post.create({
+            data:{...body, userEmail: session.user.email}
+        })
+        return new NextResponse(JSON.stringify(post, {status:200}));
     } catch(err) {
         console.log(err)
         return new NextResponse(JSON.stringify({message:"Something went wrong!"}, {status:500}));

@@ -23,10 +23,9 @@ const getData   = async (slug) => {
 const SinglePage = async ({params}) => {
 
     const {slug} = params;
-    const {post} = await getData(slug)
-    // console.log(`Logging what I got: `)
-    // console.log(post)
-    // console.log("Priting the data.desc", post?.desc)
+    const post = await getData(slug)
+    console.log(`Logging what I got: `)
+    console.log(post)
 
     return (
         <div className={styles.container}>
@@ -42,8 +41,8 @@ const SinglePage = async ({params}) => {
                         )}
 
                         <div className={styles.userTextContainer}>
-                            <span className={styles.username}> {post.user.name}</span>
-                            <span className={styles.date}> {post.createdAt.substring(0,10)}</span>
+                            <span className={styles.username}> {post?.user.name}</span>
+                            <span className={styles.date}> {post?.createdAt?.substring(0,10)}</span>
                         </div>
                     </div>
                 </div>
