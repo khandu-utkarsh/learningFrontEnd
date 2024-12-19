@@ -16,6 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script src="http://localhost:8097"></script>
+      </head>
       <body className={inter.className}>
         <AuthProvider>
         <ThemeContextProvider>
