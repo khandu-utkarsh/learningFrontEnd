@@ -1,3 +1,8 @@
+
+#asset folder, keeping it local
+**/asset-download/
+
+
 .DS_Store
 **/node_modules/
 **/.angular/
